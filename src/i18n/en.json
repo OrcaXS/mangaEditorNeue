@@ -1,0 +1,51 @@
+{
+  "misc": {
+    "language": "Language",
+    "config": "Configuration",
+    "home": "Home",
+    "footer": "Report issue: contact ljsabc@gmail.com or submit an issue on ",
+    "footer_ext": "."
+  },
+  "upload": {
+    "choose_file": "Choose a file...",
+    "drag_file": "... Or drag the file inside",
+    "click": "Click",
+    "uploading": "Uploading file…"
+  },
+  "config": {
+    "font_management": "Custom Font Management",
+    "font_explanation": "Since the browser doesn't have the permission to read the list of fonts installed on your computer, if you want to use them, you have to add their font-family names manually.",
+    "fontname_hint": "e.g., Helvetica Neue",
+    "add_font": "Add",
+    "preview_description": "Click the font on the left to preview it"
+  },
+  "editor": {
+    "custom_textarea": "Custom Textareas",
+    "balloons": "Balloons",
+    "background": "Backgroud",
+    "save": "Save as jpg file",
+    "add": "Add new Textarea",
+    "zoom_in": "Zoom in",
+    "zoom_out": "Zoom out",
+    "reset": "Reset Canvas",
+    "resize_msg": "Window resized, click to refresh",
+    "delete": "Delete element",
+    "toggle_visibility": "Hide/Show element",
+    "text_content": "Text Content",
+    "colors": "Colors",
+    "foreground": "Text",
+    "text_styles": "Text Styles",
+    "font_family": "Family",
+    "font_size": "Size",
+    "font_style": "Style",
+    "preset": "Preset",
+    "custom": "Custom",
+    "prepare_download": "Preparing for export…"
+  },
+  "download": {
+    "balloons_downloading": "Downloading balloons…"
+  },
+  "welcome": "Welcome",
+  "undo": "Undo",
+  "redo": "Redo"
+}

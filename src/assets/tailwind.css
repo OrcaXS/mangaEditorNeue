@@ -1,0 +1,79 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./dropdown.css";
+
+button:focus {
+  outline: none;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-dark;
+}
+
+.btn-green {
+  @apply bg-green text-white;
+}
+
+.btn-green:hover {
+  @apply bg-green-dark;
+}
+
+.Config-addFontBtn {
+  @apply bg-blue text-white font-semibold py-2 px-4 border border-grey-light rounded shadow;
+  margin-left: 1rem;
+  height: 2.5em;
+}
+
+.Config-addFontBtn:hover {
+  @apply bg-blue-light text-white font-semibold py-2 px-4 border border-grey-light rounded shadow;
+}
+
+.Config-testArea {
+  @apply max-w-sm rounded overflow-hidden py-2 px-3 bg-grey-light;
+}
+
+.Config-fontName {
+  @apply bg-white text-grey-darkest py-1 px-4 border border-grey-light rounded;
+  font-family: sans-serif;
+  margin-left: 1em;
+}
+
+.Config-fontName--selected {
+  @apply bg-blue-dark text-white py-1 px-4 border border-grey-light rounded;
+  font-family: sans-serif;
+  margin-left: 1em;
+}
+
+.Config-fontName:hover {
+  @apply bg-grey-lightest text-grey-darkest py-1 px-4 border border-grey-light rounded;
+  font-family: sans-serif;
+  margin-left: 1em;
+}
+
+.Thumbnail-card {
+}
+
+.DefaultLayout-langDropdown {
+  @apply rounded shadow-md;
+  position: absolute;
+  /* width: 100%; */
+}
+
+.DefaultLayout-langmenuItem {
+  @apply px-4 py-2 block text-black bg-white;
+  min-width: 100%;
+  padding: .5em 1em;
+}
+
+.DefaultLayout-langmenuItem:hover {
+  @apply bg-grey-light;
+}
