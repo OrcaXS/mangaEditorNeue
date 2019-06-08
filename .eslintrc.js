@@ -18,13 +18,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: {
-          resolve: {
-            alias: {
-              '~': path.join(__dirname, 'src'),
-            }
-          }
-        }
+        config: './webpack.config.js',
       }
     }
   },
@@ -56,7 +50,9 @@ module.exports = {
     // allow optionalDependencies
     'import/no-extraneous-dependencies': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   parserOptions: {
     parser: 'babel-eslint'

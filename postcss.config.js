@@ -17,19 +17,15 @@ module.exports = () => ({
       }),
     },
     'postcss-url': {},
-    tailwindcss: './tailwind.js',
+    tailwindcss: './tailwind.config.js',
     'postcss-preset-env': {
       stage: 2,
       features: {
         'nesting-rules': true,
       },
     },
+    'postcss-easing-gradients': {},
     'postcss-hexrgba': {},
-    'postcss-bem-linter': {
-      preset: 'suit',
-      // implicitComponents: 'src/components/**/*.vue',
-      // presetOptions: { namesace: 'twt' },
-    },
     'postcss-reporter': {},
   },
 });
