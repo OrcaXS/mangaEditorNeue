@@ -1,40 +1,36 @@
 class FetchError extends Error {
-  constructor(...params) {
+  public constructor(...params: any[]) {
     super(...params);
     if (Error.captureStackTrace) {
-      Error.captureStackTrace(this, AuthError);
+      Error.captureStackTrace(this, FetchError);
     }
-    this.authError = true;
   }
 }
 
 class ParamsError extends Error {
-  constructor(...params) {
+  public constructor(...params: any[]) {
     super(...params);
     if (Error.captureStackTrace) {
       Error.captureStackTrace(this, ParamsError);
     }
-    this.paramsError = true;
   }
 }
 
 class InternalError extends Error {
-  constructor(...params) {
+  public constructor(...params: any[]) {
     super(...params);
     if (Error.captureStackTrace) {
       Error.captureStackTrace(this, InternalError);
     }
-    this.internalError = true;
   }
 }
 
 class DbError extends Error {
-  constructor(...params) {
+  public constructor(...params: any[]) {
     super(...params);
     if (Error.captureStackTrace) {
-      Error.captureStackTrace(this, PermissionError);
+      Error.captureStackTrace(this, DbError);
     }
-    this.internalError = true;
   }
 }
 

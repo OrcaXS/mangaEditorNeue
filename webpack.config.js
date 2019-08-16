@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -13,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: [
           { loader: 'babel-loader' },
@@ -49,8 +51,9 @@ module.exports = {
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src/'),
+      'react-dom': '@hot-loader/react-dom',
     },
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -59,7 +62,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'public/'),
-    port: 3000,
+    port: 9000,
     host: 'localhost',
     hotOnly: true,
     historyApiFallback: true,

@@ -1,6 +1,7 @@
 import React, { StrictMode } from 'react';
 import { render } from 'react-dom';
 import App from './App';
+import './i18n';
 import loadFa from './scripts/fontawesome';
 
 const appElement = document.createElement('div');

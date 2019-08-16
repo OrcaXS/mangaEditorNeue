@@ -8,11 +8,20 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
-    'airbnb',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
+    'airbnb-typescript',
     'plugin:jsx-a11y/recommended',
+    'plugin:eslint-comments/recommended',
+    'plugin:promise/recommended',
+    'plugin:unicorn/recommended',
   ],
   'plugins': [
+    '@typescript-eslint',
+    'promise',
+    'unicorn',
     'react-hooks',
   ],
   settings: {
@@ -45,16 +54,21 @@ module.exports = {
     // }],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': 'off',
-    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
     // allow optionalDependencies
     'import/no-extraneous-dependencies': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'unicorn/prevent-abbreviations': 'off',
+    'unicorn/filename-case': 'off',
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    project: './tsconfig.json',
+    ecmaVersion: 2019,
+    parser: 'babel-eslint',
+    jsx: true,
   }
 }

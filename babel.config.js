@@ -1,11 +1,12 @@
-module.exports = (api) => {
+module.exports = api => {
   api.cache(true);
 
   const presets = [
     ['@babel/preset-env', {
       useBuiltIns: 'usage',
-      corejs: 'corejs@2',
+      corejs: 'corejs@3',
     }],
+    '@babel/typescript',
     '@babel/preset-react',
     'linaria/babel',
   ];
