@@ -26,7 +26,7 @@
     "eslint": "^6.6.0",
     "i18next": "^19.0.0",
     "i18next-browser-languagedetector": "^4.0.1",
-    "immer": "^5.0.0",
+    "immer": "^9.0.6",
     "ky": "^0.15.0",
     "pixi-viewport": "^4.3.3",
     "pixi.js": "^5.1.5",
